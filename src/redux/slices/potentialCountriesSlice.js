@@ -6,7 +6,7 @@ export const potentialCountriesSlice = createSlice({
         value: [
             {
                 name: {
-                    common: "This is initialPotential",
+                    common: "America",
                 },
             },
         ],
@@ -21,7 +21,8 @@ export const potentialCountriesSlice = createSlice({
     },
 });
 
-export const { setPotentialCountries, deletePotentialCountries } = potentialCountriesSlice.actions;
+export const { setPotentialCountries, deletePotentialCountries } =
+    potentialCountriesSlice.actions;
 
 export const selectPotentials = (state) => state.potentialCountries.value;
 
